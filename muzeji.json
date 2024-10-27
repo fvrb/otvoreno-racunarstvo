@@ -1,0 +1,222 @@
+[
+    {
+        "tip": "povijesni",
+        "grad": "London",
+        "naziv": "British Museum",
+        "drzava": "Engleska",
+        "eksponati": [
+            {
+                "tip": "skulptura",
+                "naziv": "The Elgin Marbles"
+            },
+            {
+                "tip": "stela",
+                "naziv": "Rosetta Stone"
+            }
+        ],
+        "posjetitelji": 5820860,
+        "web_stranica": "https://www.britishmuseum.org/",
+        "online_setnja": true,
+        "godina_osnivanja": 1753,
+        "izlozbeni_prostor": 75000,
+        "velicina_kolekcije": 8000000
+    },
+    {
+        "tip": "arheoloski",
+        "grad": "Ciudad de Mexico",
+        "naziv": "National Museum of Anthropology",
+        "drzava": "Meksiko",
+        "eksponati": [
+            {
+                "tip": "nosnja",
+                "naziv": "La Malinche huipil"
+            },
+            {
+                "tip": "skulptura",
+                "naziv": "Aztec Sunstone"
+            }
+        ],
+        "posjetitelji": 2636352,
+        "web_stranica": "https://www.mna.inah.gob.mx/",
+        "online_setnja": false,
+        "godina_osnivanja": 1964,
+        "izlozbeni_prostor": 33000,
+        "velicina_kolekcije": 600000
+    },
+    {
+        "tip": "povijesni",
+        "grad": "Seoul",
+        "naziv": "National Museum of Korea",
+        "drzava": "Juzna Koreja",
+        "eksponati": [
+            {
+                "tip": "skulptura",
+                "naziv": "Pensive Bodhisattva"
+            },
+            {
+                "tip": "skulptura",
+                "naziv": "Gyeongcheonsa Pagoda"
+            }
+        ],
+        "posjetitelji": 4180000,
+        "web_stranica": "https://www.museum.go.kr/site/eng/home",
+        "online_setnja": true,
+        "godina_osnivanja": 1945,
+        "izlozbeni_prostor": 27090,
+        "velicina_kolekcije": 310000
+    },
+    {
+        "tip": "znanstveni",
+        "grad": "Washington, D.C.",
+        "naziv": "National Air and Space Museum",
+        "drzava": "SAD",
+        "eksponati": [
+            {
+                "tip": "letjelica",
+                "naziv": "Command module Columbia"
+            },
+            {
+                "tip": "automobil",
+                "naziv": "1959 Chevrolet Corvette C1"
+            }
+        ],
+        "posjetitelji": 3100000,
+        "web_stranica": "https://airandspace.si.edu/",
+        "online_setnja": true,
+        "godina_osnivanja": 1946,
+        "izlozbeni_prostor": 71000,
+        "velicina_kolekcije": 60000
+    },
+    {
+        "tip": "povijesni",
+        "grad": "Peking",
+        "naziv": "National Museum of China",
+        "drzava": "Kina",
+        "eksponati": [
+            {
+                "tip": "arheoloski artefakt",
+                "naziv": "Simuwu ding"
+            },
+            {
+                "tip": "arheoloski artefakt",
+                "naziv": "Oslikana keramika kulture Yangshao"
+            }
+        ],
+        "posjetitelji": 6765000,
+        "web_stranica": "http://en.chnmuseum.cn/",
+        "online_setnja": true,
+        "godina_osnivanja": 2003,
+        "izlozbeni_prostor": 65000,
+        "velicina_kolekcije": 1300000
+    },
+    {
+        "tip": "umjetnicki",
+        "grad": "Amsterdam",
+        "naziv": "Rijksmuseum",
+        "drzava": "Nizozemska",
+        "eksponati": [
+            {
+                "tip": "slika",
+                "naziv": "The Milkmaid"
+            },
+            {
+                "tip": "slika",
+                "naziv": "Girl in a Blue Dress"
+            }
+        ],
+        "posjetitelji": 2700000,
+        "web_stranica": "https://www.rijksmuseum.nl/en",
+        "online_setnja": true,
+        "godina_osnivanja": 1798,
+        "izlozbeni_prostor": 12000,
+        "velicina_kolekcije": 1000000
+    },
+    {
+        "tip": "povijesni",
+        "grad": "Pariz",
+        "naziv": "Louvre",
+        "drzava": "Francuska",
+        "eksponati": [
+            {
+                "tip": "slika",
+                "naziv": "Mona Lisa"
+            },
+            {
+                "tip": "skulptura",
+                "naziv": "Venus de Milo"
+            }
+        ],
+        "posjetitelji": 8900000,
+        "web_stranica": "https://www.louvre.fr/en",
+        "online_setnja": true,
+        "godina_osnivanja": 1793,
+        "izlozbeni_prostor": 72735,
+        "velicina_kolekcije": 615797
+    },
+    {
+        "tip": "umjetnicki",
+        "grad": "Sankt-Peterburg",
+        "naziv": "The State Hermitage Museum",
+        "drzava": "Rusija",
+        "eksponati": [
+            {
+                "tip": "skulptura",
+                "naziv": "The Three Graces"
+            },
+            {
+                "tip": "slika",
+                "naziv": "Portrait of Nikolay Borisovich Yusupov"
+            }
+        ],
+        "posjetitelji": 3273753,
+        "web_stranica": "https://www.hermitagemuseum.org/wps/portal/hermitage/",
+        "online_setnja": true,
+        "godina_osnivanja": 1764,
+        "izlozbeni_prostor": 66842,
+        "velicina_kolekcije": 3000000
+    },
+    {
+        "tip": "umjetnicki",
+        "grad": "Madrid",
+        "naziv": "Prado Museum",
+        "drzava": "Spanjolska",
+        "eksponati": [
+            {
+                "tip": "slika",
+                "naziv": "La maja desnuda"
+            },
+            {
+                "tip": "slika",
+                "naziv": "David and Goliath"
+            }
+        ],
+        "posjetitelji": 3337550,
+        "web_stranica": "https://www.museodelprado.es/en",
+        "online_setnja": true,
+        "godina_osnivanja": 1819,
+        "izlozbeni_prostor": 25000,
+        "velicina_kolekcije": 20000
+    },
+    {
+        "tip": "umjetnicki",
+        "grad": "Rim",
+        "naziv": "Vatican Museums",
+        "drzava": "Vatikan",
+        "eksponati": [
+            {
+                "tip": "freska",
+                "naziv": "The Last Judgment"
+            },
+            {
+                "tip": "freska",
+                "naziv": "The School of Athens"
+            }
+        ],
+        "posjetitelji": 6800000,
+        "web_stranica": "https://www.museivaticani.va/",
+        "online_setnja": true,
+        "godina_osnivanja": 1506,
+        "izlozbeni_prostor": 43000,
+        "velicina_kolekcije": 70000
+    }
+]
