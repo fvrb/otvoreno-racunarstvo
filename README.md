@@ -14,8 +14,6 @@ ISO 8601
 Creative Commons Zero v1.0 Universal
 ## Ključne riječi
 muzej, posjetitelj, eksponat
-## Format datuma
-ISO 8601
 ## Izvori podataka
 - službene stranice muzeja navedene u samom skupu
 - https://en.wikipedia.org/wiki/List_of_most-visited_museums
