@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+    bazaSpremnik:
+        image: 'fvrb/orlabosi:baza'
+        container_name: bazaSpremnik
+        environment:
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=master
+        ports:
+        - "5435:5432"
