@@ -1,5 +1,5 @@
 ## Opis
-Ovaj skup podataka obuhvaća osnovne informacije o muzejima diljem svijeta, uključujući njihove lokacije, vrstu i opseg kolekcije, godišnju posjećenost te dodatne digitalne resurse poput web stranice i virtualne šetnje.
+Ovaj skup podataka obuhvaća osnovne informacije o muzejima diljem svijeta, uključujući njihove lokacije, vrstu i opseg kolekcije, godišnju posjećenost te dodatne digitalne resurse poput web sjedišta i virtualne šetnje.
 ## Autor
 Filip Vrbić
 ## Verzija skupa
