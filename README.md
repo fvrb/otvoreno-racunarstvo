@@ -16,8 +16,8 @@ Creative Commons Zero v1.0 Universal
 muzej, posjetitelj, eksponat
 ## Izvori podataka
 - službene stranice muzeja navedene u samom skupu
-- https://en.wikipedia.org/wiki/List_of_most-visited_museums
-- https://en.wikipedia.org/wiki/List_of_most-visited_museums
+- [List_of_largest_art_museums](https://en.wikipedia.org/wiki/List_of_largest_art_museums)
+- [List of most visited museums](https://en.wikipedia.org/wiki/List_of_most-visited_museums)
 ## Upotrebljivost
 - Analiza kulturnih trendova
 - Pomoć studentima i istraživačima
