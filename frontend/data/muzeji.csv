@@ -1,0 +1,21 @@
+nazivMuzeja,drzava,grad,godinaOsnivanja,tipMuzeja,velicinaKolekcije,posjetitelji,izlozbeniProstor,webStranica,onlineSetnja,nazivEksponata,tipEksponata
+Louvre,Francuska,Pariz,1793,povijesni,615797,8900000,72735,https://www.louvre.fr/en,true,Mona Lisa,slika
+Louvre,Francuska,Pariz,1793,povijesni,615797,8900000,72735,https://www.louvre.fr/en,true,Venus de Milo,skulptura
+National Museum of China,Kina,Peking,2003,povijesni,1300000,6765000,65000,http://en.chnmuseum.cn/,true,Simuwu ding,arheoloski artefakt
+National Museum of China,Kina,Peking,2003,povijesni,1300000,6765000,65000,http://en.chnmuseum.cn/,true,Oslikana keramika kulture Yangshao,arheoloski artefakt
+Vatican Museums,Vatikan,Rim,1506,umjetnicki,70000,6800000,43000,https://www.museivaticani.va/,true,The Last Judgment,freska
+Vatican Museums,Vatikan,Rim,1506,umjetnicki,70000,6800000,43000,https://www.museivaticani.va/,true,The School of Athens,freska
+National Museum of Anthropology,Meksiko,Ciudad de Mexico,1964,arheoloski,600000,2636352,33000,https://www.mna.inah.gob.mx/,false,La Malinche huipil,nosnja
+National Museum of Anthropology,Meksiko,Ciudad de Mexico,1964,arheoloski,600000,2636352,33000,https://www.mna.inah.gob.mx/,false,Aztec Sunstone,skulptura
+British Museum,Engleska,London,1753,povijesni,8000000,5820860,75000,https://www.britishmuseum.org/,true,The Elgin Marbles,skulptura
+British Museum,Engleska,London,1753,povijesni,8000000,5820860,75000,https://www.britishmuseum.org/,true,Rosetta Stone,stela
+National Air and Space Museum,SAD,"Washington, D.C.",1946,znanstveni,60000,3100000,71000,https://airandspace.si.edu/,true,Command module Columbia,letjelica
+National Air and Space Museum,SAD,"Washington, D.C.",1946,znanstveni,60000,3100000,71000,https://airandspace.si.edu/,true,1959 Chevrolet Corvette C1,automobil
+Rijksmuseum,Nizozemska,Amsterdam,1798,umjetnicki,1000000,2700000,12000,https://www.rijksmuseum.nl/en,true,Girl in a Blue Dress,slika
+Rijksmuseum,Nizozemska,Amsterdam,1798,umjetnicki,1000000,2700000,12000,https://www.rijksmuseum.nl/en,true,The Milkmaid,slika
+The State Hermitage Museum,Rusija,Sankt-Peterburg,1764,umjetnicki,3000000,3273753,66842,https://www.hermitagemuseum.org/wps/portal/hermitage/,true,The Three Graces,skulptura
+The State Hermitage Museum,Rusija,Sankt-Peterburg,1764,umjetnicki,3000000,3273753,66842,https://www.hermitagemuseum.org/wps/portal/hermitage/,true,Portrait of Nikolay Borisovich Yusupov,slika
+Prado Museum,Spanjolska,Madrid,1819,umjetnicki,20000,3337550,25000,https://www.museodelprado.es/en,true,La maja desnuda,slika
+Prado Museum,Spanjolska,Madrid,1819,umjetnicki,20000,3337550,25000,https://www.museodelprado.es/en,true,David and Goliath,slika
+National Museum of Korea,Juzna Koreja,Seoul,1945,povijesni,310000,4180000,27090,https://www.museum.go.kr/site/eng/home,true,Pensive Bodhisattva,skulptura
+National Museum of Korea,Juzna Koreja,Seoul,1945,povijesni,310000,4180000,27090,https://www.museum.go.kr/site/eng/home,true,Gyeongcheonsa Pagoda,skulptura
