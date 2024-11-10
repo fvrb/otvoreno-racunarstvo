@@ -1,5 +1,14 @@
 version: '3.1'
 services:
+    frontend:
+        image: 'fvrb/orlabosi:frontend'
+        ports:
+        - "80:80"
+    backend:
+        image: 'fvrb/orlabosi:backend'
+        ports:
+        - "8087:8080"
+        
     bazaSpremnik:
         image: 'fvrb/orlabosi:baza'
         container_name: bazaSpremnik
