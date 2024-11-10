@@ -1,0 +1,115 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "OR Muzeji",
+    "description": "Skup muzeja za otvoreno računarstvo.",
+    "items": {
+        "type": "object",
+        "title": "Muzej",
+        "description": "Objekt koji sadrzi podatke o jednom muzeju.",
+        "required": [
+            "id",
+            "nazivMuzeja",
+            "drzava",
+            "grad",
+            "godinaOsnivanja",
+            "tipMuzeja",
+            "velicinaKolekcije",
+            "posjetitelji",
+            "izlozbeniProstor",
+            "webStranica",
+            "onlineSetnja",
+            "eksponati"
+        ],
+        "properties": {
+            "id": {
+                "type": "integer",
+                "title": "ID muzeja",
+                "description": "ID muzeja"
+            },
+            "nazivMuzeja": {
+                "type": "string",
+                "title": "Naziv muzeja",
+                "description": "Naziv muzeja."
+            },
+            "drzava": {
+                "type": "string",
+                "title": "Drzava",
+                "description": "Drzava muzeja."
+            },
+            "grad": {
+                "type": "string",
+                "title": "Grad",
+                "description": "Grad muzeja."
+            },
+            "godinaOsnivanja": {
+                "type": "integer",
+                "title": "Godina osnivanja",
+                "description": "Godina osnivanja muzeja."
+            },
+            "tipMuzeja": {
+                "type": "string",
+                "title": "Tip muzeja",
+                "description": "Tip muzeja."
+            },
+            "velicinaKolekcije": {
+                "type": "integer",
+                "title": "Velicina kolekcije",
+                "description": "Broj izlozbenih primjeraka u muzeju."
+            },
+            "posjetitelji": {
+                "type": "integer",
+                "title": "Posjetitelji",
+                "description": "Broj posjetitelja izracunat za 2023."
+            },
+            "izlozbeniProstor": {
+                "type": "integer",
+                "title": "Izlozbeni prostor",
+                "description": "Velicina izlozbenog prostora u kvadratnim metrima."
+            },
+            "webStranica": {
+                "type": "string",
+                "title": "Web stranica",
+                "description": "Web sjediste muzeja."
+            },
+            "onlineSetnja": {
+                "type": "boolean",
+                "title": "Online setnja",
+                "description": "Dostupnost online setnje kroz muzej."
+            },
+            "eksponati": {
+                "type": "array",
+                "title": "Eksponati",
+                "description": "Eksponati dostupni u muzeju.",
+                "items": {
+                    "type": "object",
+                    "title": "Eksponat",
+                    "description": "Objekt koji sadrzi podatke o jednom eksponatu.",
+                    "required": [
+                        "id",
+                        "nazivEksponata",
+                        "tipEksponata"
+                    ],
+                    "properties": {
+                        "id": {
+                            "type": "integer",
+                            "title": "ID eksponata",
+                            "description": "ID eksponata."
+                        },
+                        "nazivEksponata": {
+                            "type": "string",
+                            "title": "Naziv eksponata",
+                            "description": "Naziv eksponata."
+                        },
+                        "tipEksponata": {
+                            "type": "string",
+                            "title": "Tip eksponata",
+                            "description": "Tip eksponata."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
