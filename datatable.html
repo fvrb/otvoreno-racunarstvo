@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtriranje podataka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container datatable">
+        <h1>Filtriranje podataka</h1>
+        <form id="filter-form">
+            <label for="atribut">Odaberite stupac za filtriranje:</label>
+            <select id="atribut" name="column-select">
+                <option value="wildcard">Svi stupci (wildcard)</option>
+                <option value="nazivMuzeja">Naziv muzeja</option>
+                <option value="drzava">Država</option>
+                <option value="grad">Grad</option>
+                <option value="godinaOsnivanja">Godina osnivanja</option>
+                <option value="tipMuzeja">Tip muzeja</option>
+                <option value="velicinaKolekcije">Veličina kolekcije</option>
+                <option value="posjetitelji">Broj posjetitelja</option>
+                <option value="izlozbeniProstor">Izložbeni prostor</option>
+                <option value="webStranica">Web sjedište</option>
+                <option value="onlineSetnja">Online šetnja</option>
+                <option value="nazivEksponata">Naziv eksponata</option>
+                <option value="tipEksponata">Tip eksponata</option>
+            </select>
+            <br><br>
+            <label for="filter">Kriterij za filtriranje:</label>
+            <input type="text" id="pretraga" name="filter" placeholder="Unesite tekst...">
+            <button type="button" id="gumb" onclick="filterData()">Filtriraj</button>
+        </form>
+
+        <div id="data-table">
+            <table id="tablica">
+                <thead>
+                    <tr>
+                        <th>Naziv</th>
+                        <th>Država</th>
+                        <th>Grad</th>
+                        <th>GOSN*</th>
+                        <th>Tip</th>
+                        <th>VKOL*</th>
+                        <th>BRPOS*</th>
+                        <th>IZLPR*</th>
+                        <th>Web</th>
+                        <th>OLŠET*</th>
+                        <th>Eksponat #1</th>
+                        <th>Eksponat #2</th>
+                    </tr>
+                </thead>
+                <tbody id="filtered-data">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="legend-container">
+            <strong>Legenda:</strong>
+            <p class="legend">
+                <strong>GOSN</strong> - Godina osnivanja muzeja<br>
+                <strong>VKOL</strong> - Veličina kolekcije<br>
+                <strong>BRPOS</strong> - Broj posjetitelja (izračunato za 2023.)<br>
+                <strong>IZLPR</strong> - Izložbeni prostor (u kvadratnim metrima)<br>
+                <strong>OLŠET</strong> - Dostupnost online šetnje kroz muzej
+            </p>
+        </div>
+    
+        <!-- Divider to reset layout for subsequent sections -->
+        <div class="divider"></div>
+
+        <div class="download-links">
+            <p>Preuzmite filtrirani skup podataka:</p>
+            <a href="#" id="download-csv" class="btn">Preuzmi CSV</a>
+            <a href="#" id="download-json" class="btn">Preuzmi JSON</a>
+        </div>
+
+        <div class="navigation-link">
+            <p>Povratak na <a href="index.html" class="link">glavnu stranicu</a>.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
