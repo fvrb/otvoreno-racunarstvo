@@ -1,1 +1,252 @@
-[{"tip": "umjetnicki", "grad": "Sankt-Peterburg", "naziv": "The State Hermitage Museum", "drzava": "Rusija", "eksponati": [{"tip": "skulptura", "naziv": "The Three Graces"}, {"tip": "slika", "naziv": "Portrait of Nikolay Borisovich Yusupov"}], "posjetitelji": 3273753, "web_stranica": "https://www.hermitagemuseum.org/wps/portal/hermitage/", "online_setnja": true, "godina_osnivanja": 1764, "izlozbeni_prostor": 66842, "velicina_kolekcije": 3000000}, {"tip": "povijesni", "grad": "Seoul", "naziv": "National Museum of Korea", "drzava": "Juzna Koreja", "eksponati": [{"tip": "skulptura", "naziv": "Pensive Bodhisattva"}, {"tip": "skulptura", "naziv": "Gyeongcheonsa Pagoda"}], "posjetitelji": 4180000, "web_stranica": "https://www.museum.go.kr/site/eng/home", "online_setnja": true, "godina_osnivanja": 1945, "izlozbeni_prostor": 27090, "velicina_kolekcije": 310000}, {"tip": "umjetnicki", "grad": "Madrid", "naziv": "Prado Museum", "drzava": "Spanjolska", "eksponati": [{"tip": "slika", "naziv": "La maja desnuda"}, {"tip": "slika", "naziv": "David and Goliath"}], "posjetitelji": 3337550, "web_stranica": "https://www.museodelprado.es/en", "online_setnja": true, "godina_osnivanja": 1819, "izlozbeni_prostor": 25000, "velicina_kolekcije": 20000}, {"tip": "umjetnicki", "grad": "Amsterdam", "naziv": "Rijksmuseum", "drzava": "Nizozemska", "eksponati": [{"tip": "slika", "naziv": "The Milkmaid"}, {"tip": "slika", "naziv": "Girl in a Blue Dress"}], "posjetitelji": 2700000, "web_stranica": "https://www.rijksmuseum.nl/en", "online_setnja": true, "godina_osnivanja": 1798, "izlozbeni_prostor": 12000, "velicina_kolekcije": 1000000}, {"tip": "povijesni", "grad": "Pariz", "naziv": "Louvre", "drzava": "Francuska", "eksponati": [{"tip": "slika", "naziv": "Mona Lisa"}, {"tip": "skulptura", "naziv": "Venus de Milo"}], "posjetitelji": 8900000, "web_stranica": "https://www.louvre.fr/en", "online_setnja": true, "godina_osnivanja": 1793, "izlozbeni_prostor": 72735, "velicina_kolekcije": 615797}, {"tip": "povijesni", "grad": "London", "naziv": "British Museum", "drzava": "Engleska", "eksponati": [{"tip": "skulptura", "naziv": "The Elgin Marbles"}, {"tip": "stela", "naziv": "Rosetta Stone"}], "posjetitelji": 5820860, "web_stranica": "https://www.britishmuseum.org/", "online_setnja": true, "godina_osnivanja": 1753, "izlozbeni_prostor": 75000, "velicina_kolekcije": 8000000}, {"tip": "arheoloski", "grad": "Ciudad de Mexico", "naziv": "National Museum of Anthropology", "drzava": "Meksiko", "eksponati": [{"tip": "nosnja", "naziv": "La Malinche huipil"}, {"tip": "skulptura", "naziv": "Aztec Sunstone"}], "posjetitelji": 2636352, "web_stranica": "https://www.mna.inah.gob.mx/", "online_setnja": false, "godina_osnivanja": 1964, "izlozbeni_prostor": 33000, "velicina_kolekcije": 600000}, {"tip": "povijesni", "grad": "Peking", "naziv": "National Museum of China", "drzava": "Kina", "eksponati": [{"tip": "arheoloski artefakt", "naziv": "Simuwu ding"}, {"tip": "arheoloski artefakt", "naziv": "Oslikana keramika kulture Yangshao"}], "posjetitelji": 6765000, "web_stranica": "http://en.chnmuseum.cn/", "online_setnja": true, "godina_osnivanja": 2003, "izlozbeni_prostor": 65000, "velicina_kolekcije": 1300000}, {"tip": "znanstveni", "grad": "Washington, D.C.", "naziv": "National Air and Space Museum", "drzava": "SAD", "eksponati": [{"tip": "letjelica", "naziv": "Command module Columbia"}, {"tip": "automobil", "naziv": "1959 Chevrolet Corvette C1"}], "posjetitelji": 3100000, "web_stranica": "https://airandspace.si.edu/", "online_setnja": true, "godina_osnivanja": 1946, "izlozbeni_prostor": 71000, "velicina_kolekcije": 60000}, {"tip": "umjetnicki", "grad": "Rim", "naziv": "Vatican Museums", "drzava": "Vatikan", "eksponati": [{"tip": "freska", "naziv": "The Last Judgment"}, {"tip": "freska", "naziv": "The School of Athens"}], "posjetitelji": 6800000, "web_stranica": "https://www.museivaticani.va/", "online_setnja": true, "godina_osnivanja": 1506, "izlozbeni_prostor": 43000, "velicina_kolekcije": 70000}]
+[
+  {
+    "id": 2,
+    "nazivMuzeja": "National Museum of China",
+    "drzava": "Kina",
+    "grad": "Peking",
+    "godinaOsnivanja": 2003,
+    "tipMuzeja": "povijesni",
+    "velicinaKolekcije": 1300000,
+    "posjetitelji": 6765000,
+    "izlozbeniProstor": 65000,
+    "webStranica": "http://en.chnmuseum.cn/",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 3,
+        "nazivEksponata": "Simuwu ding",
+        "tipEksponata": "arheoloski artefakt"
+      },
+      {
+        "id": 4,
+        "nazivEksponata": "Oslikana keramika kulture Yangshao",
+        "tipEksponata": "arheoloski artefakt"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "nazivMuzeja": "Louvre",
+    "drzava": "Francuska",
+    "grad": "Pariz",
+    "godinaOsnivanja": 1793,
+    "tipMuzeja": "povijesni",
+    "velicinaKolekcije": 615797,
+    "posjetitelji": 8900000,
+    "izlozbeniProstor": 72735,
+    "webStranica": "https://www.louvre.fr/en",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 1,
+        "nazivEksponata": "Mona Lisa",
+        "tipEksponata": "slika"
+      },
+      {
+        "id": 2,
+        "nazivEksponata": "Venus de Milo",
+        "tipEksponata": "skulptura"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nazivMuzeja": "Prado Museum",
+    "drzava": "Spanjolska",
+    "grad": "Madrid",
+    "godinaOsnivanja": 1819,
+    "tipMuzeja": "umjetnicki",
+    "velicinaKolekcije": 20000,
+    "posjetitelji": 3337550,
+    "izlozbeniProstor": 25000,
+    "webStranica": "https://www.museodelprado.es/en",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 17,
+        "nazivEksponata": "La maja desnuda",
+        "tipEksponata": "slika"
+      },
+      {
+        "id": 18,
+        "nazivEksponata": "David and Goliath",
+        "tipEksponata": "slika"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nazivMuzeja": "National Museum of Korea",
+    "drzava": "Juzna Koreja",
+    "grad": "Seoul",
+    "godinaOsnivanja": 1945,
+    "tipMuzeja": "povijesni",
+    "velicinaKolekcije": 310000,
+    "posjetitelji": 4180000,
+    "izlozbeniProstor": 27090,
+    "webStranica": "https://www.museum.go.kr/site/eng/home",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 19,
+        "nazivEksponata": "Pensive Bodhisattva",
+        "tipEksponata": "skulptura"
+      },
+      {
+        "id": 20,
+        "nazivEksponata": "Gyeongcheonsa Pagoda",
+        "tipEksponata": "skulptura"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nazivMuzeja": "The State Hermitage Museum",
+    "drzava": "Rusija",
+    "grad": "Sankt-Peterburg",
+    "godinaOsnivanja": 1764,
+    "tipMuzeja": "umjetnicki",
+    "velicinaKolekcije": 3000000,
+    "posjetitelji": 3273753,
+    "izlozbeniProstor": 66842,
+    "webStranica": "https://www.hermitagemuseum.org/wps/portal/hermitage/",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 15,
+        "nazivEksponata": "The Three Graces",
+        "tipEksponata": "skulptura"
+      },
+      {
+        "id": 16,
+        "nazivEksponata": "Portrait of Nikolay Borisovich Yusupov",
+        "tipEksponata": "slika"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nazivMuzeja": "British Museum",
+    "drzava": "Engleska",
+    "grad": "London",
+    "godinaOsnivanja": 1753,
+    "tipMuzeja": "povijesni",
+    "velicinaKolekcije": 8000000,
+    "posjetitelji": 5820860,
+    "izlozbeniProstor": 75000,
+    "webStranica": "https://www.britishmuseum.org/",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 9,
+        "nazivEksponata": "The Elgin Marbles",
+        "tipEksponata": "skulptura"
+      },
+      {
+        "id": 10,
+        "nazivEksponata": "Rosetta Stone",
+        "tipEksponata": "stela"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nazivMuzeja": "Vatican Museums",
+    "drzava": "Vatikan",
+    "grad": "Rim",
+    "godinaOsnivanja": 1506,
+    "tipMuzeja": "umjetnicki",
+    "velicinaKolekcije": 70000,
+    "posjetitelji": 6800000,
+    "izlozbeniProstor": 43000,
+    "webStranica": "https://www.museivaticani.va/",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 5,
+        "nazivEksponata": "The Last Judgment",
+        "tipEksponata": "freska"
+      },
+      {
+        "id": 6,
+        "nazivEksponata": "The School of Athens",
+        "tipEksponata": "freska"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nazivMuzeja": "National Air and Space Museum",
+    "drzava": "SAD",
+    "grad": "Washington, D.C.",
+    "godinaOsnivanja": 1946,
+    "tipMuzeja": "znanstveni",
+    "velicinaKolekcije": 60000,
+    "posjetitelji": 3100000,
+    "izlozbeniProstor": 71000,
+    "webStranica": "https://airandspace.si.edu/",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 11,
+        "nazivEksponata": "Command module Columbia",
+        "tipEksponata": "letjelica"
+      },
+      {
+        "id": 12,
+        "nazivEksponata": "1959 Chevrolet Corvette C1",
+        "tipEksponata": "automobil"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nazivMuzeja": "Rijksmuseum",
+    "drzava": "Nizozemska",
+    "grad": "Amsterdam",
+    "godinaOsnivanja": 1798,
+    "tipMuzeja": "umjetnicki",
+    "velicinaKolekcije": 1000000,
+    "posjetitelji": 2700000,
+    "izlozbeniProstor": 12000,
+    "webStranica": "https://www.rijksmuseum.nl/en",
+    "onlineSetnja": true,
+    "eksponati": [
+      {
+        "id": 14,
+        "nazivEksponata": "The Milkmaid",
+        "tipEksponata": "slika"
+      },
+      {
+        "id": 13,
+        "nazivEksponata": "Girl in a Blue Dress",
+        "tipEksponata": "slika"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nazivMuzeja": "National Museum of Anthropology",
+    "drzava": "Meksiko",
+    "grad": "Ciudad de Mexico",
+    "godinaOsnivanja": 1964,
+    "tipMuzeja": "arheoloski",
+    "velicinaKolekcije": 600000,
+    "posjetitelji": 2636352,
+    "izlozbeniProstor": 33000,
+    "webStranica": "https://www.mna.inah.gob.mx/",
+    "onlineSetnja": false,
+    "eksponati": [
+      {
+        "id": 7,
+        "nazivEksponata": "La Malinche huipil",
+        "tipEksponata": "nosnja"
+      },
+      {
+        "id": 8,
+        "nazivEksponata": "Aztec Sunstone",
+        "tipEksponata": "skulptura"
+      }
+    ]
+  }
+]

@@ -1,4 +1,4 @@
-naziv,drzava,grad,godina_osnivanja,tip,velicina_kolekcije,posjetitelji,izlozbeni_prostor,web_stranica,online_setnja,naziv,tip
+nazivMuzeja,drzava,grad,godinaOsnivanja,tipMuzeja,velicinaKolekcije,posjetitelji,izlozbeniProstor,webStranica,onlineSetnja,nazivEksponata,tipEksponata
 Louvre,Francuska,Pariz,1793,povijesni,615797,8900000,72735,https://www.louvre.fr/en,t,Mona Lisa,slika
 Louvre,Francuska,Pariz,1793,povijesni,615797,8900000,72735,https://www.louvre.fr/en,t,Venus de Milo,skulptura
 National Museum of China,Kina,Peking,2003,povijesni,1300000,6765000,65000,http://en.chnmuseum.cn/,t,Simuwu ding,arheoloski artefakt
