@@ -5,7 +5,7 @@ services:
         ports:
         - "80:80"
     backend:
-        image: 'fvrb/orlabosi:backend'
+        image: 'fvrb/orlabosi:backendv2'
         ports:
         - "8087:8080"
         
