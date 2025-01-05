@@ -1,0 +1,413 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "OpenAPI definition of museum dataset REST API",
+        "version": "v0",
+        "contact": {
+            "name": "Filip Vrbić",
+            "email": "filip.vrbic@fer.hr"
+        },
+        "license": {
+            "name": "Creative Commons Zero v1.0 Universal",
+            "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    },
+    "servers": [{
+        "url": "http://localhost:8080", 
+        "description": "Server url"
+    }],
+    "paths": {
+        "/muzeji/{id}": {
+            "get": {
+                "tags": ["single"],
+                "operationId": "getMuseumById",
+                "description": "Gets museum by ID",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "examples": {
+                        "Louvre": {
+                            "description": "Muzej Louvre",
+                            "value": 1
+                        },
+                        "ChinaMuseum": {
+                            "description": "National Museum of China",
+                            "value": 2
+                        },
+                        "VaticanMuseums": {
+                            "description": "Vatican Museums",
+                            "value": 3
+                        }
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Fetch successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": ["single"],
+                "operationId": "updateMuseum",
+                "description": "Update museum attributes",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                }],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Muzej"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Museum updated",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": ["single"],
+                "operationId": "deleteMuseum",
+                "description": "Delete museum",
+                "parameters": [{
+                    "name": "id",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Museum deleted successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resource not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/muzeji": {
+            "get": {
+                "tags": ["collection"],
+                "operationId": "getAllMuseums",
+                "description": "Fetch all museums",
+                "responses": {
+                    "200": {
+                        "description": "Fetch successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": ["single"],
+                "operationId": "createMuseum",
+                "description": "Add new museum",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Muzej"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Museum created",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejSingle"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/muzeji/tip/{type}": {
+            "get": {
+                "operationId": "getMuseumByType",
+                "description": "Fetch museums by specifying type",
+                "parameters": [{
+                    "name": "type",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Fetch successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resources not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/muzeji/grad/{city}": {
+            "get": {
+                "operationId": "getMuseumByCity",
+                "description": "Fetch museums by specifying city",
+                "parameters": [{
+                    "name": "city",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Fetch successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resources not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref":"#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/muzeji/drzava/{country}": {
+            "get": {
+                "operationId": "getMuseumByCountry",
+                "description": "Fetch museums by specifying country",
+                "parameters": [{
+                    "name": "country",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }],
+                "responses": {
+                    "200": {
+                        "description": "Fetch successful",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Resources not found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ResponseMuzejArray"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Eksponat": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "nazivEksponata": {
+                        "type": "string"
+                    },
+                    "tipEksponata": {
+                        "type": "string"
+                    },
+                    "muzej": {
+                        "$ref": "#/components/schemas/Muzej"
+                    }
+                }
+            },
+            "Muzej": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "nazivMuzeja": {
+                        "type": "string"
+                    },
+                    "drzava": {
+                        "type": "string"
+                    },
+                    "grad": {
+                        "type": "string"
+                    },
+                    "godinaOsnivanja": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "tipMuzeja": {
+                        "type": "string"
+                    },
+                    "velicinaKolekcije": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "posjetitelji": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "izlozbeniProstor": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "webStranica": {
+                        "type": "string"
+                    },
+                    "onlineSetnja": {
+                        "type": "boolean"
+                    },
+                    "eksponati": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Eksponat"
+                        }
+                    }
+                }
+            },
+            "ResponseMuzejSingle": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "response": {
+                        "$ref": "#/components/schemas/Muzej"
+                    }
+                },
+                "required": ["status", "message"]
+            },
+            "ResponseMuzejArray": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "type": "string"
+                    },
+                    "message": {
+                        "type": "string"
+                    },
+                    "response": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Muzej"
+                        }
+                    }
+                },
+                "required": ["status", "message"]
+            }
+        }
+    }
+}

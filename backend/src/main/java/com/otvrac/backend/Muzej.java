@@ -88,7 +88,7 @@ public class Muzej {
         return tipMuzeja;
     }
 
-    public void setTip(String tipMuzeja) {
+    public void setTipMuzeja(String tipMuzeja) {
         this.tipMuzeja = tipMuzeja;
     }
 

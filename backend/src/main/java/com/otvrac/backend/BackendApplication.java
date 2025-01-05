@@ -3,7 +3,10 @@ package com.otvrac.backend;
 import jakarta.persistence.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +18,16 @@ public class BackendApplication {
 
 	@PersistenceContext
 	private EntityManager entityManager; // This injects the EntityManager automatically
+
+	@GetMapping(value = "/openapi.json", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Resource> getOpenApiJson() {
+		ClassPathResource resource = new ClassPathResource("openapi.json");
+		if (!resource.exists()) {
+			return ResponseEntity.notFound().build();
+		}
+
+		return ResponseEntity.ok(resource);
+	}
 
 	@GetMapping("/start")
 	public List<Muzej> start() {
