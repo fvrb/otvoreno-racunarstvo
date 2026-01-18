@@ -1,25 +1,34 @@
 package com.otvrac.backend;
 
 import jakarta.persistence.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.IOException;
+import java.nio.file.FileSystem;
+import java.nio.file.Paths;
 import java.util.List;
 
 @SpringBootApplication
 @RestController
 public class BackendApplication {
 
-	@PersistenceContext
-	private EntityManager entityManager; // This injects the EntityManager automatically
+    @Autowired
+    private RefreshService refreshService;
 
-	@GetMapping(value = "/openapi.json", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PersistenceContext
+	private EntityManager entityManager;
+
+    @GetMapping(value = "/openapi.json", produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Resource> getOpenApiJson() {
 		ClassPathResource resource = new ClassPathResource("openapi.json");
 		if (!resource.exists()) {
@@ -114,6 +123,37 @@ public class BackendApplication {
 
 		return query.getResultList();
 	}
+
+    @PostMapping("/refresh")
+    public ResponseEntity<Void> refresh() {
+        refreshService.refreshFiles();
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/export/json")
+    public ResponseEntity<FileSystemResource> exportJson() {
+        FileSystemResource resource = new FileSystemResource(Paths.get("data/muzeji.json"));
+        if (!resource.exists()) return ResponseEntity.notFound().build();
+        return ResponseEntity
+                .ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"muzeji.json\"")
+                .contentType(MediaType.APPLICATION_JSON)
+                .body(resource);
+    }
+
+    @GetMapping("/export/csv")
+    public ResponseEntity<FileSystemResource> getCsv() {
+        FileSystemResource resource = new FileSystemResource("data/muzeji.csv");
+
+        if (!resource.exists()) return ResponseEntity.notFound().build();
+
+        return ResponseEntity
+                .ok()
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"muzeji.csv\"")
+                .contentType(MediaType.parseMediaType("text/csv"))
+                .body(resource);
+    }
+
 
 	public static void main(String[] args) {
 		SpringApplication.run(BackendApplication.class, args);

@@ -18,13 +18,13 @@ public class RestAPI {
     @PostMapping
     public ResponseEntity<?> createMuseum(@RequestBody Muzej muzej) {
         Muzej museumSaved = muzejRepository.save(muzej);
-        return ResponseEntity.ok(new ApiResponse<Muzej>("OK", "Muzej spremljen", museumSaved));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzej spremljen", museumSaved));
     }
 
     @GetMapping
     public ResponseEntity<?> getAllMuseums() {
         List<Muzej> museums = muzejRepository.findAll();
-        return ResponseEntity.ok(new ApiResponse<List<Muzej>>("OK", "Muzeji dohvaćeni", museums));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzeji dohvaćeni", museums));
     }
 
     @GetMapping("/{id}")
@@ -33,7 +33,7 @@ public class RestAPI {
         if(museum.isEmpty())
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse<Muzej>("Not Found", "Muzej nije pronađen", null));
 
-        return ResponseEntity.ok(new ApiResponse<Muzej>("OK", "Muzej dohvaćen", museum.get()));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzej dohvaćen", museum.get()));
     }
 
     @GetMapping("/drzava/{country}")
@@ -42,7 +42,7 @@ public class RestAPI {
         if(museums.isEmpty())
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse<List<Muzej>>("Not found", "Muzeji nisu pronađeni", null));
 
-        return ResponseEntity.ok(new ApiResponse<List<Muzej>>("OK", "Muzeji dohvaćeni", museums));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzeji dohvaćeni", museums));
     }
 
     @GetMapping("/grad/{city}")
@@ -51,7 +51,7 @@ public class RestAPI {
         if(museums.isEmpty())
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse<List<Muzej>>("Not found", "Muzeji nisu pronađeni", null));
 
-        return ResponseEntity.ok(new ApiResponse<List<Muzej>>("OK", "Muzeji dohvaćeni", museums));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzeji dohvaćeni", museums));
     }
 
     @GetMapping("/tip/{type}")
@@ -60,7 +60,7 @@ public class RestAPI {
         if(museums.isEmpty())
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse<List<Muzej>>("Not found", "Muzeji nisu pronađeni", null));
 
-        return ResponseEntity.ok(new ApiResponse<List<Muzej>>("OK", "Muzeji dohvaćeni", museums));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzeji dohvaćeni", museums));
     }
 
     @PutMapping("/{id}")
@@ -84,7 +84,7 @@ public class RestAPI {
 
         Muzej savedMuseum = muzejRepository.save(museum);
 
-        return ResponseEntity.ok(new ApiResponse<Muzej>("OK", "Muzej izmijenjen", savedMuseum));
+        return ResponseEntity.ok(new ApiResponse<>("OK", "Muzej izmijenjen", savedMuseum));
     }
 
     @DeleteMapping("/{id}")

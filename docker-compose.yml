@@ -1,11 +1,11 @@
 version: '3.1'
 services:
     frontend:
-        image: 'fvrb/orlabosi:frontend'
+        image: 'fvrb/orlabosi:frontendv2'
         ports:
         - "80:80"
     backend:
-        image: 'fvrb/orlabosi:backendv2'
+        image: 'fvrb/orlabosi:backendv3'
         ports:
         - "8087:8080"
         
